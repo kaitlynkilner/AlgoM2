@@ -9,7 +9,7 @@
 * @return a tuple containing the number of platforms used, the optimal total height, and the number of paintings on each platform
 */
 std::tuple<int, int, std::vector<int>> program5B(int n, int W, std::vector<int> heights, std::vector<int> widths){
-    int *arr = new int[n];
+    int *arr = new int[n+1];
     //basecases
     arr[0] = 0;
     arr[1] = heights[0];
